@@ -36,9 +36,9 @@
 
 <hr>
 
-> ***Ruby version*** *3.1.2p20*
-> ***Rails Version*** *7.0.4*
-> ***Bundler version*** *2.3.22*
-> ***Gem version*** *3.3.7*
+> ***Ruby version*** *3.1.2p20* <br>
+> ***Rails Version*** *7.0.4* <br>
+> ***Bundler version*** *2.3.22* <br>
+> ***Gem version*** *3.3.7* <br>
 
 <hr>
