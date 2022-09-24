@@ -2,6 +2,8 @@
   <img src="https://github.com/aliraxa-hub/sting/blob/master/public/coffee-sting.png" width="500"/>
 </div>
 
+[![Directory file count](https://img.shields.io/github/directory-file-count/aliraxa-hub/sting?label=No.%20of%20files&logo=ruby&logoColor=FF0000&style=plastic)](https://github.com/aliraxa-hub/sting)
+
 <h1 align="center">COFFEE STING</h1>
 <h3 align="center">Project of learning basic to advance concepts of ruby-on-rails, bootstrap, react</h3>
 
@@ -22,5 +24,3 @@
 <a href="https://www.ruby-lang.org/en/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/ruby/ruby-original.svg" alt="ruby" width="40" height="40"/> </a> 
 <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a> 
 <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> </p>
-
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=aliraxa-hub&show_icons=true&locale=en" alt="aliraxa-hub" /></p>
