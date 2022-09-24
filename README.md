@@ -80,6 +80,6 @@
   - Run the migrations <br>
   'rails db:migrate' (to run the migrations)<br>
 
-  - Run the server to check everything is in working condition. <br>
-  'rails s' (to run the server)<br>
+  - Run the server to check everything is in working condition.
+  'rails s' (to run the server)
 
