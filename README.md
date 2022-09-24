@@ -3,6 +3,8 @@
 </div>
 
 [![Directory file count](https://img.shields.io/github/directory-file-count/aliraxa-hub/sting?label=No.%20of%20files&logo=ruby&logoColor=FF0000&style=plastic)](https://github.com/aliraxa-hub/sting)
+[![Total no of lines](https://img.shields.io/tokei/lines/github.com/aliraxa-hub/sting?label=Total%20no%20of%20lines&logo=git&style=plastic)](https://github.com/aliraxa-hub/sting)
+[![packege.json](https://img.shields.io/github/package-json/v/aliraxa-hub/sting?color=FF&label=package.json&logo=json)](https://github.com/aliraxa-hub/sting)
 
 <h1 align="center">COFFEE STING</h1>
 <h3 align="center">Project of learning basic to advance concepts of ruby-on-rails, bootstrap, react</h3>
