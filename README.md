@@ -43,7 +43,7 @@
 
 <hr>
 
-# Project Startup with Postgres
+### Project Startup with Postgres
   - Implement this project to learn at the stage of beginning.
   '''
   rails new (project-name) --database=postgresql <br>
@@ -80,6 +80,11 @@
   - Run the migrations <br>
   'rails db:migrate' (to run the migrations)<br>
 
+<<<<<<< HEAD
   - Run the server to check everything is in working condition.
   'rails s' (to run the server)
 
+=======
+  - Run the server to check everything is in working condition. <br>
+  'rails s' (to run the server)<br>
+>>>>>>> ce9274d646c75b911cb2ab67bb9db5205579a336
