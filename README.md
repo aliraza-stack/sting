@@ -1,7 +1,7 @@
 <div id="header" align="center">
   <img src="https://github.com/aliraxa-hub/sting/blob/master/public/coffee-sting.png" width="500"/>
 </div>
-<p align="left"></p>
+
 
 <h1 align="center">COFFEE STING</h1>
 <h3 align="center">Project of learning basic to advance concepts of ruby-on-rails, bootstrap, react</h3>
