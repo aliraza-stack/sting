@@ -45,46 +45,48 @@
 
 ### Project Startup with Postgres
   - Implement this project to learn at the stage of beginning.
-  '''
-  rails new (project-name) --database=postgresql <br>
-  cd (project-name) <br>
-  bundle install <br>
-  '''
+  ```
+  rails new (project-name) --database=postgresql
+  cd (project-name)
+  bundle install
+  ```
   - After creating the project, you need to create a database. To create a database, you need to configer 
-  database.yml file. First you need to create a role with password in postgres. <br>
-  'sudo -u postgres psql' <br>
-  'create role (role-name) with createdb login password '(password)';' <br>
-  'alter role (role-name) superuser;' <br>
-  'create database (database-name) owner (role-name);' <br>
+  database.yml file. First you need to create a role with password in postgres.
+  ```
+  sudo -u postgres psql
+  create role (role-name) with createdb login password '(password)';
+  alter role (role-name) superuser
+  create database (database-name) owner (role-name);
+  ```
 
-  - Configer database.yml file <br>
-  '''
-  host: <%= ENV['DB_HOST'] %> <br>
-  database: <%= ENV['DEVELOPMENT_DB_NAME'] %>  <br>
-  username: <%= ENV['DB_USERNAME'] %> <br>
-  password: <%= ENV['DB_PASSWORD'] %> <br>
-  '''
-  - After creating a role, you need to create .ENV file and run the migrations. <br>
-  'touch .env' (to create .ENV file in the project)<br>
+  - Configer database.yml file
+  ```
+  host: <%= ENV['DB_HOST'] %>
+  database: <%= ENV['DEVELOPMENT_DB_NAME'] %>
+  username: <%= ENV['DB_USERNAME'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
+  ```
+  - After creating a role, you need to create .ENV file and run the migrations.
+  ```
+  touch .env    (to create .ENV file in the project)
+  ```
 
-  - Configer .ENV file by adding these lines in the .ENV file <br>
-  '''
-  DB_HOST=localhost <br>
+  - Configer .ENV file by adding these lines in the .ENV file
+  ```
+  DB_HOST=localhost
 
-  # Development database <br>
-  DB_USERNAME=(role-name) <br>
-  DB_PASSWORD=(role-password) <br>
-  DEVELOPMENT_DB_NAME=(database-name)_development  (Example: STING_development) <br>
-  '''
+  # Development database
+  DB_USERNAME=(role-name)
+  DB_PASSWORD=(role-password)
+  DEVELOPMENT_DB_NAME=(database-name)_development  (Example: STING_development)
+  ```
 
-  - Run the migrations <br>
-  'rails db:migrate' (to run the migrations)<br>
+  - Run the migrations
+  ```
+  rails db:migrate (to run the migrations)
+  ```
 
-<<<<<<< HEAD
   - Run the server to check everything is in working condition.
-  'rails s' (to run the server)
-
-=======
-  - Run the server to check everything is in working condition. <br>
-  'rails s' (to run the server)<br>
->>>>>>> ce9274d646c75b911cb2ab67bb9db5205579a336
+  ```
+  rails s (to run the server)
+  ```
