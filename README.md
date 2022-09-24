@@ -2,6 +2,10 @@
   <img src="https://github.com/aliraxa-hub/sting/blob/master/public/coffee-sting.png" width="500"/>
 </div>
 
+
+<h1 align="center">COFFEE STING</h1>
+<h3 align="center">Project of learning basic to advance concepts of ruby-on-rails, bootstrap, react</h3>
+
 [![project development work](https://img.shields.io/github/hacktoberfest/2021/aliraxa-hub/sting?color=FF&label=project%20development%20work&logo=ruby&logoColor=FF0000&style=plastic&suggestion_label=hack%20to%20be%20rfest)](https://github.com/aliraxa-hub/sting)
 [![Total no of lines](https://img.shields.io/tokei/lines/github.com/aliraxa-hub/sting?label=Total%20no%20of%20lines&logo=git&style=plastic)](https://github.com/aliraxa-hub/sting)
 [![Weekly Commets](https://img.shields.io/github/commit-activity/w/aliraxa-hub/sting?logo=git&style=plastic)](https://github.com/aliraxa-hub/sting)
@@ -9,8 +13,6 @@
 [![Yearly Commets](https://img.shields.io/github/commit-activity/y/aliraxa-hub/sting?logo=git&style=plastic)](https://github.com/aliraxa-hub/sting)
 [![Last Commet](https://img.shields.io/github/last-commit/aliraxa-hub/sting?logo=git&style=plastic)](https://github.com/aliraxa-hub/sting)
 
-<h1 align="center">COFFEE STING</h1>
-<h3 align="center">Project of learning basic to advance concepts of ruby-on-rails, bootstrap, react</h3>
 
 <h3 align="center">Languages and Tools</h3>
 <p align="center"> 
