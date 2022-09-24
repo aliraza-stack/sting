@@ -42,3 +42,43 @@
 > ***Gem version*** *3.3.7* <br>
 
 <hr>
+
+### Project Startup with Postgres
+  - Implement this project to learn at the stage of beginning.
+  '''
+  rails new (project-name) --database=postgresql <br>
+  cd (project-name) <br>
+  bundle install <br>
+  '''
+  - After creating the project, you need to create a database. To create a database, you need to configer 
+  database.yml file. First you need to create a role with password in postgres. <br>
+  'sudo -u postgres psql' <br>
+  'create role (role-name) with createdb login password '(password)';' <br>
+  'alter role (role-name) superuser;' <br>
+  'create database (database-name) owner (role-name);' <br>
+
+  - Configer database.yml file <br>
+  '''
+  host: <%= ENV['DB_HOST'] %> <br>
+  database: <%= ENV['DEVELOPMENT_DB_NAME'] %>  <br>
+  username: <%= ENV['DB_USERNAME'] %> <br>
+  password: <%= ENV['DB_PASSWORD'] %> <br>
+  '''
+  - After creating a role, you need to create .ENV file and run the migrations. <br>
+  'touch .env' (to create .ENV file in the project)<br>
+
+  - Configer .ENV file by adding these lines in the .ENV file <br>
+  '''
+  DB_HOST=localhost <br>
+
+  # Development database <br>
+  DB_USERNAME=(role-name) <br>
+  DB_PASSWORD=(role-password) <br>
+  DEVELOPMENT_DB_NAME=(database-name)_development  (Example: STING_development) <br>
+  '''
+
+  - Run the migrations <br>
+  'rails db:migrate' (to run the migrations)<br>
+
+  - Run the server to check everything is in working condition. <br>
+  'rails s' (to run the server)<br>
