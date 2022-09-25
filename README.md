@@ -14,7 +14,6 @@
 [![Monthly Commets](https://img.shields.io/github/commit-activity/m/aliraxa-hub/sting?logo=git&style=plastic)](https://github.com/aliraxa-hub/sting)
 [![Yearly Commets](https://img.shields.io/github/commit-activity/y/aliraxa-hub/sting?logo=git&style=plastic)](https://github.com/aliraxa-hub/sting)
 [![Last Commet](https://img.shields.io/github/last-commit/aliraxa-hub/sting?logo=git&style=plastic)](https://github.com/aliraxa-hub/sting)
-[![Ruby](https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white)](https://github.com/aliraxa-hub/sting)
 
 #
 
@@ -36,59 +35,61 @@
 <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a> 
 <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> </p>
 
-<hr>
+#
 
 > ***Ruby version*** *3.1.2p20* <br>
 > ***Rails Version*** *7.0.4* <br>
 > ***Bundler version*** *2.3.22* <br>
 > ***Gem version*** *3.3.7* <br>
 
-<hr>
+#
 
 ### Project Startup with Postgres
-  - Implement this project to learn at the stage of beginning.
+  **Implement this project to learn at the stage of beginning.**
   ```
   rails new (project-name) --database=postgresql
   cd (project-name)
   bundle install
   ```
-  - After creating the project, you need to create a database. To create a database, you need to configer 
-  database.yml file. First you need to create a role with password in postgres.
+
+  **Add a gem in Gemfile in the group :development :test and run `bundle install`**
+  ```
+  gem 'dotenv-rails'
+  ```
+  **After creating the project and adding the GEM, you need to create a role with password in postgres by using the following command.**
   ```
   sudo -u postgres psql
   create role (role-name) with createdb login password '(password)';
-  alter role (role-name) superuser
-  create database (database-name) owner (role-name);
   ```
 
-  - Configer database.yml file
+  **Configer database.yml file**
   ```
   host: <%= ENV['DB_HOST'] %>
   database: <%= ENV['DEVELOPMENT_DB_NAME'] %>
-  username: <%= ENV['DB_USERNAME'] %>
-  password: <%= ENV['DB_PASSWORD'] %>
+  username: <%= ENV['DBTABASE_USERNAME'] %>
+  password: <%= ENV['DBTABASE_PASSWORD'] %>
   ```
-  - After creating a role, you need to create .ENV file and run the migrations.
+  **After creating a role, you need to create .ENV file and run the migrations.**
   ```
-  touch .env    (to create .ENV file in the project)
+  touch .env    (to create .ENV file in the project root directory)
   ```
 
-  - Configer .ENV file by adding these lines in the .ENV file
+  **Configer .ENV file by adding these lines in the .ENV file**
   ```
   DB_HOST=localhost
 
   # Development database
-  DB_USERNAME=(role-name)
-  DB_PASSWORD=(role-password)
+  DATABASE_USERNAME=(role-name)
+  DATABASE_PASSWORD=(role-password)
   DEVELOPMENT_DB_NAME=(database-name)_development  (Example: STING_development)
   ```
 
-  - Run the migrations
+  **Run the setup and migrations**
   ```
-  rails db:migrate (to run the migrations)
+  rails db:setup db:migrate
   ```
 
-  - Run the server to check everything is in working condition.
+  **Run the server to check everything is in working condition.**
   ```
   rails s (to run the server)
   ```
